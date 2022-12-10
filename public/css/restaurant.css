@@ -1,0 +1,116 @@
+.date-list-item {
+  width: 709px;
+  height: 34px;
+
+  margin-top: 5px; /* 날짜 항목간의 margin-top 간격 5px설정 */
+  margin-left: 56px;
+  
+  background: #E5E5E5;
+  border-radius: 7px;
+}
+
+.date-list-item:nth-child(1){
+  /* 
+    첫번쨰 데이트 항목에 한해서만 margin-top 50px 설정, 
+    css적용 우선순위에 따라 위에 margin-top 5px로 설정한것 보다 우선 순위높음
+  */
+  margin-top: 50px; 
+}
+
+.date-list-item > span {
+  line-height: 34px;
+  margin-left: 20px;
+
+  font-family: 'S-Core Dream';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.date-list-item > img.triangle {
+  float: right;
+  width: 11px;
+  height: 8px;
+
+  margin-top: 11px;
+  margin-right: 15px;
+}
+
+.meal-container {
+  width: 709px;
+  height: 452px; /* date 항목의 margin-top 5px 설정에 따라 5px 감소시킴 */
+
+  box-sizing: border-box;
+
+  padding-top: 30px;
+  padding-left: 15px;
+  margin-left: 56px;
+}
+
+.meal-item {
+  width: 168px;
+  height: 368px;
+
+  float: left;
+}
+
+.meal-item:nth-child(2) {
+  margin-left: 83px;
+  margin-right: 93px;
+}
+
+.meal-item > .meal-kind {
+  width: 60px;
+  height: 60px;
+  color: #2D5FC0;
+
+  line-height: 60px;
+  text-align: center;
+
+  box-sizing: border-box;
+  margin: auto;
+
+  font-family: 'S-Core Dream';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+
+  border: 1px solid #2D5FC0;
+  border-radius: 100%;
+}
+
+.meal-item > img {
+  display: block;
+
+  width: 168px;
+  height: 126px;
+
+  margin-top: 10px;
+}
+
+.meal-item > .meal-detail {
+  height: 85px;
+  text-align: center;
+  margin: 30px auto 34px;
+
+  font-family: 'S-Core Dream';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.meal-item > button {
+  display: block;
+
+  width: 115px;
+  height: 23px;
+  color: white;
+
+  box-sizing: border-box;
+
+  margin: auto;
+  
+  background: #F5924A;
+  border-radius: 7px;
+  border: 0px;
+}
